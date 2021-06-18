@@ -1,0 +1,207 @@
+@font-face {
+    font-family: Whitney;
+    font-weight: 300;
+    src: url(./assets/6c6374bad0b0b6d204d8d6dc4a18d820.woff) format("woff")
+}
+
+@font-face {
+    font-family: Whitney;
+    font-weight: 400;
+    src: url(./assets/e8acd7d9bf6207f99350ca9f9e23b168.woff) format("woff")
+}
+
+@font-face {
+    font-family: Whitney;
+    font-weight: 500;
+    src: url(./assets/3bdef1251a424500c1b3a78dea9b7e57.woff) format("woff")
+}
+
+@font-face {
+    font-family: Whitney;
+    font-weight: 600;
+    src: url(./assets/be0060dafb7a0e31d2a1ca17c0708636.woff) format("woff")
+}
+
+@font-face {
+    font-family: Whitney;
+    font-weight: 700;
+    src: url(./assets/8e12fb4f14d9c4592eb8ec9f22337b04.woff) format("woff")
+}
+
+body {
+    background-color: rgb(54, 57, 63);
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+    height: 100%;
+    text-rendering: optimizeLegibility;
+}
+
+.username {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.375rem;
+    display: inline;
+    vertical-align: baseline;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+    color: rgb(255, 255, 255);
+}
+
+.text {
+    font-family: Whitney, Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.message {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.375rem;
+    display: block;
+    position: relative;
+    user-select: text;
+    word-wrap: normal;
+    margin-left: 3.44rem;
+    max-width: 100%;
+    text-align: left;
+    color: rgb(220, 221, 222);
+}
+
+.timestamp {
+    font-size: .75rem;
+    font-weight: 500;
+    font-stretch: 110%;
+    color: rgb(114, 118, 125);
+}
+
+.messageBox {
+    padding-left: 2mm;
+    padding-right: 2mm;
+    padding-top: 3mm;
+    padding-bottom: 3mm;
+    max-width: 90%;
+}
+
+.avatar {
+    padding: 2mm;
+}
+
+.avatarimg {
+    border-radius: 50%;
+}
+
+:hover.messageBox {
+    background-color: rgba(4, 4, 5, 0.07);
+}
+
+.title {
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    position: relative;
+    /* height: 8vh; */
+    height: 56px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgb(54, 57, 63);
+    box-shadow: 0px 1px 2px rgba(4, 4, 5, 0.25);
+    z-index: 100;
+    flex-basis: auto;
+    align-items: center;
+    padding-left: 8px;
+}
+
+.titleText {
+    display: flex;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    font-size: 16px;
+    font-style: normal;
+    line-height: 20px;
+    height: 20px;
+    position: relative;
+}
+
+.icon {
+    display: flex;
+    /* padding: 0.5rem; */
+    /* padding-top: 1rem; */
+    /* padding-left: 1.15rem; */
+    /* padding-right: 0.65rem; */
+    margin-left: 8px;
+    margin-right: 8px;
+    height: 24px;
+}
+
+.scroll {
+    display: block;
+    overflow: visible;
+    position: relative;
+    align-items: stretch;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    z-index: 1;
+    height: 92vh;
+    scrollbar-width: thin;
+    margin-left: 0.25vw;
+}
+
+.scroll::-webkit-scrollbar {
+    width: 3mm;
+}
+
+.scroll::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+.scroll::-webkit-scrollbar-thumb {
+    background-color: rgb(36, 36, 36);
+    outline: 1px solid rgb(48, 48, 48);
+    border-radius: 8px;
+}
+
+a {
+    color: rgb(0, 175, 244);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+img[aria-label] {
+    width: 1.375rem;
+    height: 1.375rem;
+    display: inline-block;
+    user-select: text;
+    vertical-align: bottom;
+}
+
+img.emoji {
+    width: 1.375rem;
+    height: 1.375rem;
+    display: inline-block;
+    user-select: text;
+    vertical-align: bottom;
+}
+
+.jumboable {
+    width: 3rem;
+    height: 3rem;
+    padding: 0.1rem;
+    display: inline-block;
+    user-select: text;
+    vertical-align: bottom;
+}
+
+.group {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+}
