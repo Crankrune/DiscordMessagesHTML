@@ -158,12 +158,12 @@ body {
     border-radius: 8px;
 }
 
-a {
+a.link[href] {
     color: rgb(0, 175, 244);
     text-decoration: none;
 }
 
-a:hover {
+a.link[href]:hover {
     text-decoration: underline;
 }
 
@@ -197,4 +197,57 @@ img.emoji {
     flex-direction: column;
     flex-wrap: wrap;
     flex-basis: 100%;
+}
+
+div.embed-container {
+    display: grid;
+}
+
+img.embed {
+    display: block;
+    object-fit: cover;
+    max-width: 400px;
+    max-height: 400px;
+    min-width: 300px;
+    width: auto;
+    height: auto;
+}
+
+.spoiler {
+    /* background-color: #333333; */
+    background-color: rgb(32, 34, 37);
+    border-radius: 0.2em;
+    color: transparent;
+    cursor: pointer;
+    transition: 0.35s background-color;
+}
+
+.spoiler:hover {
+    /* background-color: transparent; */
+    background-color: rgba(255, 255, 255, 0.1);
+    color: inherit;
+    transition-delay: 0s;
+}
+
+blockquote {
+    display: block;
+    box-sizing: border-box;
+    padding-left: 12px;
+    padding-right: 8px;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+}
+
+.quote {
+    display: flex;
+}
+
+.blockquoteDivider {
+    background-color: rgb(79, 84, 92);
+    color: rgb(220, 221, 222);
+    display: block;
+    line-height: 1.375rem;
+    width: 4px;
 }
